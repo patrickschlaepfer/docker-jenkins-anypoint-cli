@@ -15,6 +15,11 @@ pipeline {
       }
     }
 
-    
+    stage('Running anypoint-cli') {
+      steps {
+        sh 'anypoint-cli'
+      }
+    }
+
   }
 }
