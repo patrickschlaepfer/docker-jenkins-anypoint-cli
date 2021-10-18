@@ -8,10 +8,13 @@ pipeline {
   tools { nodejs "NodeJS Latest" }
   
   stages {
-    stage('Build') {
+    
+    stage('Install dependencies') {
       steps {
-        sh 'npm config ls'
+        sh 'npm install'
       }
     }
+
+    
   }
 }
